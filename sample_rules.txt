@@ -1,0 +1,8 @@
+# 规则名: 条件（# 为注释）
+姓名非空: 姓名 not_empty
+年龄范围: 年龄 between 0 and 150
+入职日期格式: 入职日期 date YYYY-MM-DD
+离职日期格式: 离职日期 date YYYY-MM-DD
+离职不早于入职: 离职日期 >= 入职日期
+离职非空: 离职日期 not_empty
+离职需填邮箱: if 离职非空 then 邮箱 not_empty
